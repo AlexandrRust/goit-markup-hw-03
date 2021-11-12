@@ -55,8 +55,9 @@ body {
   text-align: center;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -144,6 +145,7 @@ body {
 
 .hero {
   background: #2f303a;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -153,7 +155,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 106px;
   text-align: center;
 }
 
@@ -169,7 +170,7 @@ body {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  margin: 30px auto;
+  margin: 30px auto 0;
   padding: 0;
   border: none;
   border-radius: 4px;
@@ -179,7 +180,14 @@ body {
 
 .peculiarities-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.peculiarities-item {
+  margin-right: 30px;
+}
+
+.peculiarities-item:last-child {
+  margin-right: 0;
 }
 
 .peculiarities-item-title {
@@ -252,7 +260,7 @@ body {
 
 footer {
   background-color: #2f303a;
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 .footer-logo {
@@ -319,24 +327,25 @@ address {
 
 .worklist-item {
   margin-top: 30px;
-  border: #eeeeee 1px solid;
-  height: 404px;
+}
+.worklist-img {
+  display: block;
 }
 
+.worklist-container {
+  padding: 20px 24px;
+  border: #eeeeee 1px solid;
+}
 .worklist-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  margin-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
 }
 .worklist-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-left: 24px;
 }
